@@ -11,9 +11,9 @@
     2. [<font color="DodgerBlue">控制逻辑</font>](#admin_logic)
 3. [<font color="LightSlateGray">艺术文字</font>](#art_word)
     1. [<font color="DodgerBlue">面包</font>](#word_bread)
-    2. [<font color="DodgerBlue">奶油</font>]()
-    3. [<font color="DodgerBlue">蛋糕</font>]()
-    4. [<font color="DodgerBlue">雨水</font>]()
+    2. [<font color="DodgerBlue">奶油</font>](#word_cream)
+    3. [<font color="DodgerBlue">蛋糕</font>](#word_cake)
+    4. [<font color="DodgerBlue">雨水</font>](#word_rain)
 4. [<font color="LightSlateGray">嵌入文字</font>]()
     1. [<font color="DodgerBlue">春天</font>]()
 5. [<font color="LightSlateGray">光影文字</font>]()
@@ -121,14 +121,24 @@
 
 更多参数与效果图参考下面图表：
 
-大模型 | 预处理器 | 控制模型 | <div style="width:400px">原图</div> | <div style="width:400px">预处理</div>-预览图 | <div style="width:400px">生成图1</div> | <div style="width:400px">生成图2</div> | <div style="width:400px">生成图3</div> | <div style="width:400px">生成图4</div> 
-:---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: 
-deliberate_v2 | invert (白底黑线反色其他默认) | depth 默认配置 | ![效果展示图片](files/plugins07.png) | ![效果展示图片](files/plugins08.png)bread lay on wood kitchen table | ![效果展示图片](files/plugins09.png)bread lay on wood kitchen table | ![效果展示图片](files/plugins10.png)bread lay on wood kitchen table | ![效果展示图片](files/plugins11.png)bread lay on wood kitchen table | ![效果展示图片](files/plugins12.png)bread lay on wood kitchen table
-deliberate_v2 | depth_midas 其他默认 | depth 默认配置 | ![效果展示图片](files/plugins13.png) | ![效果展示图片](files/plugins14.png)bread lay on wood kitchen table | ![效果展示图片](files/plugins15.png)bread lay on wood kitchen table | ![效果展示图片](files/plugins16.png)bread lay on wood kitchen table | ![效果展示图片](files/plugins17.png)bread lay on wood kitchen table | ![效果展示图片](files/plugins18.png)bread lay on wood kitchen table
-revAnimated_v122 | depth_midas 其他默认 | depth 默认配置 | ![效果展示图片](files/plugins19.png) | ![效果展示图片](files/plugins20.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/plugins21.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/plugins22.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/plugins23.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/plugins24.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread
-deliberate_v2 | Canny 其他默认 | Canny 默认配置 | ![效果展示图片](files/plugins25.png) | ![效果展示图片](files/plugins26.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/plugins27.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/plugins28.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/plugins29.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/plugins30.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread
-deliberate_v2 | Canny invert 白底黑线反色其他默认 | Canny 默认配置 | ![效果展示图片](files/plugins31.png) | ![效果展示图片](files/plugins32.png) bread lay on wood kitchen table | ![效果展示图片](files/plugins33.png) bread lay on wood kitchen table | ![效果展示图片](files/plugins34.png) bread lay on wood kitchen table | ![效果展示图片](files/plugins35.png) bread lay on wood kitchen table | ![效果展示图片](files/plugins36.png) bread lay on wood kitchen table
-deliberate_v2 | lineart standard (标准线稿提取-白底黑线反色 | Lineart 默认配置 | ![效果展示图片](files/plugins37.png) | ![效果展示图片](files/plugins38.png) bread lay on wood kitchen table | ![效果展示图片](files/plugins39.png) bread lay on wood kitchen table | ![效果展示图片](files/plugins40.png) bread lay on wood kitchen table | ![效果展示图片](files/plugins41.png) bread lay on wood kitchen table | ![效果展示图片](files/plugins42.png) bread lay on wood kitchen table
+ID | 大模型 | 预处理器 | 控制模型 | <div style="width:400px">原图</div> | <div style="width:400px">预处理</div>-预览图 | <div style="width:400px">生成图1</div> | <div style="width:400px">生成图2</div> | <div style="width:400px">生成图3</div> | <div style="width:400px">生成图4</div> 
+:---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: 
+1 | deliberate_v2 | invert (白底黑线反色其他默认) | depth 默认配置 | ![效果展示图片](files/bread01.png) | ![效果展示图片](files/bread02.png)bread lay on wood kitchen table | ![效果展示图片](files/bread3.png)bread lay on wood kitchen table | ![效果展示图片](files/bread04.png)bread lay on wood kitchen table | ![效果展示图片](files/bread05.png)bread lay on wood kitchen table | ![效果展示图片](files/bread06.png)bread lay on wood kitchen table
+2 | deliberate_v2 | depth_midas 其他默认 | depth 默认配置 | ![效果展示图片](files/bread11.png) | ![效果展示图片](files/bread12.png)bread lay on wood kitchen table | ![效果展示图片](files/bread13.png)bread lay on wood kitchen table | ![效果展示图片](files/bread14.png)bread lay on wood kitchen table | ![效果展示图片](files/bread15.png)bread lay on wood kitchen table | ![效果展示图片](files/bread16.png)bread lay on wood kitchen table
+3 | revAnimated_v122 | depth_midas 其他默认 | depth 默认配置 | ![效果展示图片](files/bread21.png) | ![效果展示图片](files/bread22.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/bread23.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/bread24.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/bread25.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/bread26.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread
+4 | deliberate_v2 | Canny 其他默认 | Canny 默认配置 | ![效果展示图片](files/bread31.png) | ![效果展示图片](files/bread32.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/bread33.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/bread34.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/bread35.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/bread36.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread
+5 | deliberate_v2 | Canny invert 白底黑线反色其他默认 | Canny 默认配置 | ![效果展示图片](files/bread41.png) | ![效果展示图片](files/bread42.png) bread lay on wood kitchen table | ![效果展示图片](files/bread43.png) bread lay on wood kitchen table | ![效果展示图片](files/bread44.png) bread lay on wood kitchen table | ![效果展示图片](files/bread45.png) bread lay on wood kitchen table | ![效果展示图片](files/bread46.png) bread lay on wood kitchen table
+6 | deliberate_v2 | lineart standard (标准线稿提取-白底黑线反色) | Lineart 默认配置 | ![效果展示图片](files/bread51.png) | ![效果展示图片](files/bread52.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/bread53.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/bread54.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/bread55.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread | ![效果展示图片](files/bread56.png) (Best quality,masterpiece,ultra high res,raw photo,official art), bread
+7 | deliberate_v2 | lineart (白底黑线反色) | Lineart 默认配置 | ![效果展示图片](files/bread61.png) | ![效果展示图片](files/bread62.png) bread lay on wood kitchen table | ![效果展示图片](files/bread63.png) bread lay on wood kitchen table | ![效果展示图片](files/bread64.png) bread lay on wood kitchen table | ![效果展示图片](files/bread65.png) bread lay on wood kitchen table | ![效果展示图片](files/bread66.png) bread lay on wood kitchen table
+8 | deliberate_v2 | lineart (白底黑线反色) | Lineart 默认配置 | ![效果展示图片](files/bread71.png) | ![效果展示图片](files/bread72.png) make it bread | ![效果展示图片](files/bread73.png) make it bread | ![效果展示图片](files/bread74.png) make it bread | ![效果展示图片](files/bread75.png) make it bread | ![效果展示图片](files/bread76.png) make it bread
+9 | deliberate_v2 | None | IP2P 引导终止时机0.8 + Canny 权重0.5 介入0.3 终止0.8| ![效果展示图片](files/bread81.png) | ![效果展示图片](files/bread82.png) make it bread | ![效果展示图片](files/bread83.png) make it bread | ![效果展示图片](files/bread84.png) make it bread | ![效果展示图片](files/bread85.png) make it bread | ![效果展示图片](files/bread86.png) make it bread
+
+#### <span id="word_cream">3.2 面包</span>
+
+效果A | 效果B
+:---: | :---:
+![效果展示图片](files/modal03.png) | ![效果展示图片](files/modal04.png)
+
 
 ### <span id="about_links">相关链接</span>
 
